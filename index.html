@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdoor Hockey</title>
+    
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/02bea20449.js" crossorigin="anonymous"></script>
     <!-- tailwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,14 +26,541 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                headingcolor: '#131318',
+                pagrpcolor: '#6D6D70',
+              },
+              rotate: {
+                '140': '140deg',
               }
             }
           }
         }
       </script>
 </head>
-<body>
-    <h1>This is hfjfjljkd</h1>
+<body class="bg-white font-manrope text-base">
+    <!-- header -->
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li>
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn">Button</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="container mx-auto">
+        <!-- main banner -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./Images/3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                
+            </div>
+        </section>
+        <!-- main banner end -->
+        <!-- professional hocky's club -->
+        <section class="my-24">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-headingcolor">Professional Hockeys Club</h1>
+                <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+            </div>
+            <div class="flex lg:gap-10 flex-col lg:flex-row">
+              <!-- 1st -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-red-500 rotate-140" style="--value:87;" role="progressbar">
+                    <p class="-rotate-140">87%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Prayer Facility</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 2nd -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-green-500 rotate-140" style="--value:95;" role="progressbar">
+                    <p class="-rotate-140">95%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Experienced Coach</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 3rd -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-yellow-600 rotate-140" style="--value:90;" role="progressbar">
+                    <p class="-rotate-140">90%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Senior Player</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 4th -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-blue-700 rotate-140" style="--value:80;" role="progressbar">
+                    <p class="-rotate-140">80%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Training Ground</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 4th end -->
+            </div>
+        </section>
+        <!-- professional hocky's club end -->
+        <!-- program section start-->
+        <section class="my-24">
+          <div class="text-center mb-20">
+              <h1 class="text-4xl font-extrabold text-headingcolor">Program Sections</h1>
+              <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+          </div>
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <!-- 1st -->
+            <div class="hero rounded-3xl" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+              <div class="">
+                <div class="hero-content text-white lg:ps-10">
+                  <div class="lg:mt-24 lg:mb-7">
+                    <h1 class="mb-5 text-3xl font-extrabold">Hello there</h1>
+                    <p class="mb-5 pe-20 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <!-- 2nd -->
+            <div class="hero rounded-3xl" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+              <div class="">
+                <div class="hero-content text-white lg:ps-10">
+                  <div class="lg:mt-24 lg:mb-7">
+                    <h1 class="mb-5 text-3xl font-extrabold">Hello there</h1>
+                    <p class="mb-5 pe-20 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
+                  </div>
+                </div>
+              </div>              
+            </div>
+              
+            <!-- 3rd -->
+            <div class="hero lg:col-span-2 rounded-3xl" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+              <div class="">
+                <div class="hero-content text-white lg:ps-10">
+                  <div class="lg:mt-24 lg:mb-7">
+                    <h1 class="mb-5 text-3xl font-extrabold">Hello there</h1>
+                    <p class="mb-5 pe-20 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          
+              
+          </div>
+        </section>
+        <!-- program section end -->
+        <!-- Our new products start -->
+        <section>
+          <div class="text-center mb-20">
+            <h1 class="text-4xl font-extrabold text-headingcolor">Our New Products</h1>
+            <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <!-- 1st product -->
+            <div class="card lg:card-side">
+              <figure><img src="./Images/5.png" alt="Album"/></figure>
+              <div class="card-body space-y-2">
+                <div class="flex gap-2 text-pagrpcolor">
+                  <i class="fa-solid fa-star pt-1 text-yellow-500"></i>
+                  <p>5.0</p>
+                  <i class="fa-regular fa-eye pt-1"></i>
+                  <p>20</p>
+                  <i class="fa-regular fa-heart pt-1"></i>
+                  <p>200</p>
+                </div>
+                <h2 class="card-title text-xl text-headingcolor font-extrabold">New album is released!</h2>
+                <p class="text-base">Click the button to listen on Spotiwhy app.</p>
+                <div class="flex flex-col lg:flex-row">
+                  <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
+                  <p><i class="fa-solid fa-cart-shopping pe-3"></i>Delivery fee: Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd product -->
+            <div class="card lg:card-side">
+              <figure><img src="./Images/6.png" alt="Album"/></figure>
+              <div class="card-body space-y-2">
+                <div class="flex gap-2 text-pagrpcolor">
+                  <i class="fa-solid fa-star pt-1 text-yellow-500"></i>
+                  <p>5.0</p>
+                  <i class="fa-regular fa-eye pt-1"></i>
+                  <p>20</p>
+                  <i class="fa-regular fa-heart pt-1"></i>
+                  <p>200</p>
+                </div>
+                <h2 class="card-title text-xl text-headingcolor font-extrabold">New album is released!</h2>
+                <p class="text-base">Click the button to listen on Spotiwhy app.</p>
+                <div class="flex flex-col lg:flex-row">
+                  <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
+                  <p><i class="fa-solid fa-cart-shopping pe-3"></i>Delivery fee: Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd product -->
+            <div class="card lg:card-side">
+              <figure><img src="./Images/7.png" alt="Album"/></figure>
+              <div class="card-body space-y-2">
+                <div class="flex gap-2 text-pagrpcolor">
+                  <i class="fa-solid fa-star pt-1 text-yellow-500"></i>
+                  <p>5.0</p>
+                  <i class="fa-regular fa-eye pt-1"></i>
+                  <p>20</p>
+                  <i class="fa-regular fa-heart pt-1"></i>
+                  <p>200</p>
+                </div>
+                <h2 class="card-title text-xl text-headingcolor font-extrabold">New album is released!</h2>
+                <p class="text-base">Click the button to listen on Spotiwhy app.</p>
+                <div class="flex flex-col lg:flex-row">
+                  <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
+                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- 4th product -->
+            <div class="card lg:card-side">
+              <figure><img src="./Images/8.png" alt="Album"/></figure>
+              <div class="card-body space-y-2">
+                <div class="flex gap-2 text-pagrpcolor">
+                  <i class="fa-solid fa-star pt-1 text-yellow-500"></i>
+                  <p>5.0</p>
+                  <i class="fa-regular fa-eye pt-1"></i>
+                  <p>20</p>
+                  <i class="fa-regular fa-heart pt-1"></i>
+                  <p>200</p>
+                </div>
+                <h2 class="card-title text-xl text-headingcolor font-extrabold">New album is released!</h2>
+                <p class="text-base">Click the button to listen on Spotiwhy app.</p>
+                <div class="flex flex-col lg:flex-row">
+                  <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
+                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- 5th product -->
+            <div class="card lg:card-side">
+              <figure><img src="./Images/9.png" alt="Album"/></figure>
+              <div class="card-body space-y-2">
+                <div class="flex gap-2 text-pagrpcolor">
+                  <i class="fa-solid fa-star pt-1 text-yellow-500"></i>
+                  <p>5.0</p>
+                  <i class="fa-regular fa-eye pt-1"></i>
+                  <p>20</p>
+                  <i class="fa-regular fa-heart pt-1"></i>
+                  <p>200</p>
+                </div>
+                <h2 class="card-title text-xl text-headingcolor font-extrabold">New album is released!</h2>
+                <p class="text-base">Click the button to listen on Spotiwhy app.</p>
+                <div class="flex flex-col lg:flex-row">
+                  <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
+                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                </div>
+              </div>
+            </div>
+            <!-- 6th product -->
+            <div class="card lg:card-side">
+              <figure><img src="./Images/10.png" alt="Album"/></figure>
+              <div class="card-body space-y-2">
+                <div class="flex gap-2 text-pagrpcolor">
+                  <i class="fa-solid fa-star pt-1 text-yellow-500"></i>
+                  <p>5.0</p>
+                  <i class="fa-regular fa-eye pt-1"></i>
+                  <p>20</p>
+                  <i class="fa-regular fa-heart pt-1"></i>
+                  <p>200</p>
+                </div>
+                <h2 class="card-title text-xl text-headingcolor font-extrabold">New album is released!</h2>
+                <p class="text-base">Click the button to listen on Spotiwhy app.</p>
+                <div class="flex flex-col lg:flex-row">
+                  <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
+                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- Our new products end -->
+        <!-- clients Questions start -->
+        <section class="my-24">
+          <div class="text-center mb-20">
+            <h1 class="text-4xl font-extrabold text-headingcolor">Clients Question</h1>
+            <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+          </div>
+          <!-- faq container -->
+          <div class="flex lg:gap-20 flex-col lg:flex-row">
+            <div class="p-5">
+              <img src="./Images/11.png" alt="">
+            </div>
+            <!-- accordion -->
+            <div class="flex-1">
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-bold text-headingcolor">
+                  Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold text-headingcolor">
+                  Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold text-headingcolor">
+                  Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold text-headingcolor">
+                  Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold text-headingcolor">
+                  Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-bold text-headingcolor">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- clients Questions end -->
+        <!-- Get in touch area start -->
+        <section class="my-24">
+          <div class="text-center mb-20">
+            <h1 class="text-4xl font-extrabold text-headingcolor">Get In Touch</h1>
+            <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+          </div>
+          <!-- get in container -->
+          <div class="flex gap-10 flex-col lg:flex-row">
+            <!-- left -->
+            <div class="space-y-5 mt-20">
+              <div class="w-80 bg-[#F8FDF0] p-10">
+                <img src="./Images/12.png" class="mb-7" alt="">
+                <p class="mb-2">Phone Number</p>
+                <h3 class="text-headingcolor text-xl font-extrabold">(+62) 123-321-543</h3>
+              </div>
+              <div class="w-80 bg-[#F8FDF0] p-10">
+                <img src="./Images/13.png" class="mb-7" alt="">
+                <p class="mb-2">Phone Number</p>
+                <h3 class="text-headingcolor text-xl font-extrabold">(+62) 123-321-543</h3>
+              </div>
+              <div class="w-80 bg-[#F8FDF0] p-10">
+                <img src="./Images/14.png" class="mb-7" alt="">
+                <p class="mb-2">Phone Number</p>
+                <h3 class="text-headingcolor text-xl font-extrabold">(+62) 123-321-543</h3>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="flex-1">
+              <div class="grid gap-10 grid-cols-1 lg:grid-cols-2">
+
+                <!-- name -->
+                <div>
+                  <label for="price" class="block text-xl font-bold leading-6 text-text-headingcolor">Your Name</label>
+                  <div class="relative mt-2 rounded-md shadow-sm">
+                    <input type="text" class=" bg-[#F8FDF0] block w-full rounded-md border-0 py-4 pl-7 pr-20 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6" 
+                    placeholder="Enter your full name">
+                  </div>
+                </div>
+                <!-- email -->
+                <div>
+                  <label for="price" class="block text-xl font-bold leading-6 text-text-headingcolor">Your Email</label>
+                  <div class="relative mt-2 rounded-md shadow-sm">
+                    <input type="text" class=" bg-[#F8FDF0] block w-full rounded-md border-0 py-4 pl-7 pr-20 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6" 
+                    placeholder="Enter your email">
+                  </div>
+                </div>
+                <!-- subject -->
+                <div>
+                  <label for="price" class="block text-xl font-bold leading-6 text-text-headingcolor">Subject</label>
+                  <div class="relative mt-2 rounded-md shadow-sm">
+                    <input type="text" class=" bg-[#F8FDF0] block w-full rounded-md border-0 py-4 pl-7 pr-20 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6" 
+                    placeholder="Enter your subject">
+                  </div>
+                </div>
+                <!-- phone -->
+                <div>
+                  <label for="price" class="block text-xl font-bold leading-6 text-text-headingcolor">Phone Number</label>
+                  <div class="relative mt-2 rounded-md shadow-sm">
+                    <input type="text" class=" bg-[#F8FDF0] block w-full rounded-md border-0 py-4 pl-7 pr-20 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6" 
+                    placeholder="Enter your phone number">
+                  </div>
+                </div>
+                <!-- phone end -->
+                <!-- phone -->
+                
+              </div>
+
+              <div class="my-10">
+                <div>
+                  <label for="price" class="block text-xl font-bold leading-6 text-text-headingcolor">Message</label>
+                  <div class="relative mt-2 rounded-md shadow-sm">
+                    <textarea class="bg-[#F8FDF0] block lg:h-96 w-full rounded-md border-0 py-4 pl-7 pr-20 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6" 
+                    placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <!-- button -->
+                <button class="bg-red-600 text-white block w-full rounded-xl border-0 my-5 py-5 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6">
+                  Send Message
+                </button>
+                
+              </div>
+            </div>
+          </div> 
+        </section>
+        <!-- Get in touch area end -->
+    </main>
+   
+<!-- If you have any query, idea or suggestions, we are open for you. -->
+    <!-- footer -->
+    <footer class="bg-headingcolor p-10">
+      <div class="footer text-pagrpcolor container mx-auto text-base">
+        <nav>
+          <header class="footer-title text-3xl font-bold text-white">Get In Touch</header> 
+          <p class="">You can contact us any time. <br>
+            You can visit our website. <br>
+            You can mail us or <br>
+            communicate us to our contact number.</p>
+          <div class="space-y-3">
+            <div class="flex">
+              <i class="fa-regular fa-envelope pe-4 mt-1"></i> 
+              <p>hockeys@support.com</p>
+            </div>
+            <div class="flex">
+              <i class="fa-solid fa-phone pe-4 mt-1"></i> 
+              <p>(+62) 123-321-543</p>
+            </div>
+
+          </div>
+          
+        </nav>
+        <nav>
+          <header class="footer-title text-xl font-bold text-white">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Careers</a>
+          <a class="link link-hover">News & Article</a>
+          <a class="link link-hover">Legal Notice</a>
+        </nav> 
+        <nav>
+          <header class="footer-title text-xl font-bold text-white">Support</header> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav> 
+        <nav>
+          <header class="footer-title text-xl font-bold text-white">Services</header> 
+          <a class="link link-hover">Academy</a>
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Hockeys for kids</a>
+          <a class="link link-hover">Hockeys for Adult</a>
+        </nav> 
+      </div>
+    </footer>
 </body>
 </html>
