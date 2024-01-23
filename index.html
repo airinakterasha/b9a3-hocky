@@ -23,14 +23,226 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                headingcolor: '#131318',
+                pagrpcolor: '#6D6D70',
+              },
+              rotate: {
+                '140': '140deg',
               }
             }
           }
         }
       </script>
 </head>
-<body>
-    <h1>This is hfjfjljkd</h1>
+<body class="bg-white font-manrope">
+    <!-- header -->
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li>
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn">Button</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="container mx-auto">
+        <!-- main banner -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./Images/3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                
+            </div>
+        </section>
+        <!-- main banner end -->
+        <!-- professional hocky's club -->
+        <section class="my-24">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-headingcolor">Professional Hockeys Club</h1>
+                <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+            </div>
+            <div class="flex lg:gap-10 flex-col lg:flex-row">
+              <!-- 1st -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-red-500 rotate-140" style="--value:87;" role="progressbar">
+                    <p class="-rotate-140">87%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Prayer Facility</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 2nd -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-green-500 rotate-140" style="--value:95;" role="progressbar">
+                    <p class="-rotate-140">95%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Experienced Coach</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 3rd -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-yellow-600 rotate-140" style="--value:90;" role="progressbar">
+                    <p class="-rotate-140">90%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Senior Player</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 4th -->
+              <div class="card">
+                <figure class="px-10 pt-10">
+                  <div class="radial-progress text-blue-700 rotate-140" style="--value:80;" role="progressbar">
+                    <p class="-rotate-140">80%</p>
+                  </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-headingcolor text-xl font-semibold">Training Ground</h2>
+                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                </div>
+              </div>
+              <!-- 4th end -->
+            </div>
+        </section>
+        <!-- professional hocky's club end -->
+        <!-- program section start-->
+        <section class="my-24">
+          <div class="text-center">
+              <h1 class="text-4xl font-extrabold text-headingcolor">Program Sections</h1>
+              <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+          </div>
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <!-- 1st -->
+            <div class="hero" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="">
+                <div class="hero-content text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- 2nd -->
+            <div class="hero" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="">
+                <div class="hero-content text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- 3rd -->
+            <div class="hero lg:col-span-2" style="background-image: url(./Images/2.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="">
+                <div class="hero-content text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <!-- program section end -->
+    </main>
+    <!-- 1st program -->
+    <div class="card image-full">
+      <figure><img src="./Images/2.png" alt="Shoes" /></figure>
+      <div>
+        
+      </div>
+      <div class="card-body">
+        <div class="">
+          <h2>Shoes!</h2>
+          <p class="">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+          </p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
 </body>
 </html>
