@@ -31,6 +31,9 @@
               },
               rotate: {
                 '140': '140deg',
+              },
+              translate: {
+                '50' : '50%',
               }
             }
           }
@@ -49,36 +52,27 @@
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
+                      <li><a class="text-red-500 font-bold hover:text-red-500 hover:bg-transparent">Home</a></li>
+                      <li><a class="hover:text-red-500 hover:bg-transparent font-bold">About</a></li>
+                      <li><a class="hover:text-red-500 hover:bg-transparent font-bold">Pages</a></li>
+                      <li><a class="hover:text-red-500 hover:bg-transparent font-bold">Blog</a></li>
+                      <li><a class="hover:text-red-500 hover:bg-transparent font-bold">Contact</a></li>     
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <a class="btn btn-ghost lg:text-4xl font-extrabold uppercase">outdoor<span class="text-red-500">Hocky</span></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li><a class="text-red-500 font-bold hover:text-red-500 hover:bg-transparent">Home</a></li>
+                    <li><a class="hover:text-red-500 hover:bg-transparent font-bold">About</a></li>
+                    <li><a class="hover:text-red-500 hover:bg-transparent font-bold">Pages</a></li>
+                    <li><a class="hover:text-red-500 hover:bg-transparent font-bold">Blog</a></li>
+                    <li><a class="hover:text-red-500 hover:bg-transparent font-bold">Contact</a></li>       
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Button</a>
+                  <i class="fa-solid fa-magnifying-glass me-4 lg:text-2xl"></i>
+                  <a class="btn capitalize bg-red-500 text-white lg:text-xl font-bold">Get ticket</a>
                 </div>
             </div>
         </nav>
@@ -87,38 +81,54 @@
     <!-- main start -->
     <main class="container mx-auto">
         <!-- main banner -->
-        <section>
-            <div class="carousel w-full">
+        <section class="mx-4">
+            <div class="carousel w-full lg:relative">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="./Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
+                  <div class="absolute flex justify-between transform left-1/3 bottom-5 lg:left-10 lg:bottom-10 gap-5">
+                    <a href="#slide3" class="btn btn-circle bg-headingcolor border-headingcolor text-white lg:text-2xl">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-headingcolor border-headingcolor text-white lg:text-2xl">❯</a>
+                  </div>                 
                 </div> 
+                <!-- -translate-y-1/2 left-5 right-5 top-1/2-->
                 <div id="slide2" class="carousel-item relative w-full">
                   <img src="./Images/2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  <div class="absolute flex justify-between transform left-1/3 bottom-5 lg:left-10 lg:bottom-10 gap-5">
+                    <a href="#slide1" class="btn btn-circle bg-headingcolor border-headingcolor text-white lg:text-2xl">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-headingcolor border-headingcolor text-white lg:text-2xl">❯</a>
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full">
                   <img src="./Images/3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  <div class="absolute flex justify-between transform left-1/3 bottom-5 lg:left-10 lg:bottom-10 gap-5">
+                    <a href="#slide2" class="btn btn-circle bg-headingcolor border-headingcolor text-white lg:text-2xl">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-headingcolor border-headingcolor text-white lg:text-2xl">❯</a>
                   </div>
                 </div> 
                 
+                <!-- heroes field -->
+                <div class="bg-headingcolor sm:hidden lg:inline lg:absolute lg:right-10 lg:bottom-10 lg:p-16 rounded-2xl">
+                  <h3 class="text-white text-xl mb-3 font-extrabold lg:text-2xl">Meet all the heroes from the field</h3>
+                  <p class="text-pagrpcolor">
+                    We do proud with our heroes. You also can know more about our heros. <br>You can meet our Meet all the heroes from the field. 
+                  </p>
+                </div>
             </div>
+            <!-- heroes field -->
+            <div class="bg-headingcolor mt-6 p-5 lg:hidden">
+              <h3 class="text-white text-xl mb-3 font-extrabold lg:text-2xl">Meet all the heroes from the field</h3>
+              <p class="text-pagrpcolor">
+                We do proud with our heroes. You also can know more about our heros. <br>You can meet our Meet all the heroes from the field. 
+              </p>
+            </div>
+            
         </section>
         <!-- main banner end -->
         <!-- professional hocky's club -->
-        <section class="my-24">
+        <section class="my-24 mx-4">
             <div class="text-center">
-                <h1 class="text-4xl font-extrabold text-headingcolor">Professional Hockeys Club</h1>
-                <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
+                <h1 class="text-2xl lg:text-4xl font-extrabold text-headingcolor">Professional Hockeys Club</h1>
+                <P class="text-base text-pagrpcolor my-4 lg:px-96">Our Hochye's club is amaging. We are offering ellegant and most demandable services. You will have more professional Outdoor Hocky's services.</P>
             </div>
             <div class="flex lg:gap-10 flex-col lg:flex-row">
               <!-- 1st -->
@@ -130,7 +140,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="text-headingcolor text-xl font-semibold">Prayer Facility</h2>
-                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                  <p class="text-pagrpcolor text-base">Outdoor Hocky's have awesome prayer facility.</p>
                 </div>
               </div>
               <!-- 2nd -->
@@ -142,7 +152,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="text-headingcolor text-xl font-semibold">Experienced Coach</h2>
-                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                  <p class="text-pagrpcolor text-base">We have outstanding experience Coach.</p>
                 </div>
               </div>
               <!-- 3rd -->
@@ -154,7 +164,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="text-headingcolor text-xl font-semibold">Senior Player</h2>
-                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                  <p class="text-pagrpcolor text-base">You will find here experienced senior players.</p>
                 </div>
               </div>
               <!-- 4th -->
@@ -166,7 +176,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="text-headingcolor text-xl font-semibold">Training Ground</h2>
-                  <p class="text-pagrpcolor text-base">If a dog chews shoes whose shoes does he choose?</p>
+                  <p class="text-pagrpcolor text-base">There are amaging training ground.</p>
                 </div>
               </div>
               <!-- 4th end -->
@@ -174,9 +184,9 @@
         </section>
         <!-- professional hocky's club end -->
         <!-- program section start-->
-        <section class="my-24">
+        <section class="my-24 mx-4">
           <div class="text-center mb-20">
-              <h1 class="text-4xl font-extrabold text-headingcolor">Program Sections</h1>
+              <h1 class="text-2xl lg:text-4xl font-extrabold text-headingcolor">Program Sections</h1>
               <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
           </div>
           <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
@@ -186,7 +196,7 @@
               <div class="">
                 <div class="hero-content text-white lg:ps-10">
                   <div class="lg:mt-24 lg:mb-7">
-                    <h1 class="mb-5 text-3xl font-extrabold">Hello there</h1>
+                    <h1 class="mb-5 text-xl lg:text-3xl font-extrabold">Hello there</h1>
                     <p class="mb-5 pe-20 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
                   </div>
@@ -199,7 +209,7 @@
               <div class="">
                 <div class="hero-content text-white lg:ps-10">
                   <div class="lg:mt-24 lg:mb-7">
-                    <h1 class="mb-5 text-3xl font-extrabold">Hello there</h1>
+                    <h1 class="mb-5 text-xl lg:text-3xl font-extrabold">Hello there</h1>
                     <p class="mb-5 pe-20 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
                   </div>
@@ -213,22 +223,20 @@
               <div class="">
                 <div class="hero-content text-white lg:ps-10">
                   <div class="lg:mt-24 lg:mb-7">
-                    <h1 class="mb-5 text-3xl font-extrabold">Hello there</h1>
+                    <h1 class="mb-5 text-xl lg:text-3xl font-extrabold">Hello there</h1>
                     <p class="mb-5 pe-20 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button class="btn bg-[#FF4240] border-[#FF4240] text-white">Register Now</button>
                   </div>
                 </div>
               </div>              
-            </div>
-          
-              
+            </div>     
           </div>
         </section>
         <!-- program section end -->
         <!-- Our new products start -->
-        <section>
+        <section class="mx-4">
           <div class="text-center mb-20">
-            <h1 class="text-4xl font-extrabold text-headingcolor">Our New Products</h1>
+            <h1 class="text-2xl lg:text-4xl font-extrabold text-headingcolor">Our New Products</h1>
             <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -288,7 +296,7 @@
                 <p class="text-base">Click the button to listen on Spotiwhy app.</p>
                 <div class="flex flex-col lg:flex-row">
                   <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
-                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                  <p><i class="fa-solid fa-cart-shopping pe-3"></i>Delivery fee: Free</p>
                 </div>
               </div>
             </div>
@@ -308,7 +316,7 @@
                 <p class="text-base">Click the button to listen on Spotiwhy app.</p>
                 <div class="flex flex-col lg:flex-row">
                   <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
-                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                  <p><i class="fa-solid fa-cart-shopping pe-3"></i>Delivery fee: Free</p>
                 </div>
               </div>
             </div>
@@ -328,7 +336,7 @@
                 <p class="text-base">Click the button to listen on Spotiwhy app.</p>
                 <div class="flex flex-col lg:flex-row">
                   <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
-                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                  <p><i class="fa-solid fa-cart-shopping pe-3"></i>Delivery fee: Free</p>
                 </div>
               </div>
             </div>
@@ -348,7 +356,7 @@
                 <p class="text-base">Click the button to listen on Spotiwhy app.</p>
                 <div class="flex flex-col lg:flex-row">
                   <h3 class="text-red-700 font-extrabold pe-4">Price- $22.00</h3>
-                  <p><i class="fa-solid fa-cart-shopping lg:pe-3"></i>Delivery fee: Free</p>
+                  <p><i class="fa-solid fa-cart-shopping pe-3"></i>Delivery fee: Free</p>
                 </div>
               </div>
             </div>
@@ -357,25 +365,25 @@
         </section>
         <!-- Our new products end -->
         <!-- clients Questions start -->
-        <section class="my-24">
-          <div class="text-center mb-20">
-            <h1 class="text-4xl font-extrabold text-headingcolor">Clients Question</h1>
+        <section class="my-24 mx-4">
+          <div class="text-center lg:mb-20">
+            <h1 class="text-2xl lg:text-4xl font-extrabold text-headingcolor">Clients Question</h1>
             <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
           </div>
           <!-- faq container -->
           <div class="flex lg:gap-20 flex-col lg:flex-row">
-            <div class="p-5">
-              <img src="./Images/11.png" alt="">
+            <div class="lg:p-5">
+              <img src="./Images/11.png" class="" alt="">
             </div>
             <!-- accordion -->
-            <div class="flex-1">
+            <div class="lg:flex-1">
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" checked="checked" /> 
                 <div class="collapse-title text-xl font-bold text-headingcolor">
                   Our Equipment
                 </div>
                 <div class="collapse-content"> 
-                  <p>hello</p>
+                  <p>We have latest equipments</p>
                 </div>
               </div>
               <div class="collapse collapse-plus">
@@ -384,7 +392,7 @@
                   Hockey Training
                 </div>
                 <div class="collapse-content"> 
-                  <p>hello</p>
+                  <p>We are providing professional training.</p>
                 </div>
               </div>
               <div class="collapse collapse-plus">
@@ -393,7 +401,7 @@
                   Private Lessons
                 </div>
                 <div class="collapse-content"> 
-                  <p>hello</p>
+                  <p>We are offering private lessons.</p>
                 </div>
               </div>
               <div class="collapse collapse-plus">
@@ -402,7 +410,7 @@
                   Ski Touring
                 </div>
                 <div class="collapse-content"> 
-                  <p>hello</p>
+                  <p>Here, you will also get ski touring.</p>
                 </div>
               </div>
               <div class="collapse collapse-plus">
@@ -411,7 +419,7 @@
                   Booking
                 </div>
                 <div class="collapse-content"> 
-                  <p>hello</p>
+                  <p>You need to confirm booking to get our services.</p>
                 </div>
               </div>
               <div class="collapse collapse-plus">
@@ -420,7 +428,7 @@
                   Pricings
                 </div>
                 <div class="collapse-content"> 
-                  <p>hello</p>
+                  <p>Our price is very reasonable.</p>
                 </div>
               </div>
             </div>
@@ -428,15 +436,15 @@
         </section>
         <!-- clients Questions end -->
         <!-- Get in touch area start -->
-        <section class="my-24">
-          <div class="text-center mb-20">
-            <h1 class="text-4xl font-extrabold text-headingcolor">Get In Touch</h1>
+        <section class="my-24 mx-4">
+          <div class="text-center lg:mb-20">
+            <h1 class="text-2xl lg:text-4xl font-extrabold text-headingcolor">Get In Touch</h1>
             <P class="text-base text-pagrpcolor my-4 lg:px-96">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</P>
           </div>
           <!-- get in container -->
           <div class="flex gap-10 flex-col lg:flex-row">
             <!-- left -->
-            <div class="space-y-5 mt-20">
+            <div class="space-y-5 lg:mt-16">
               <div class="w-80 bg-[#F8FDF0] p-10">
                 <img src="./Images/12.png" class="mb-7" alt="">
                 <p class="mb-2">Phone Number</p>
